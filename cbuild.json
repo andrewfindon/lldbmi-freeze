@@ -1,0 +1,23 @@
+{
+    "build": {
+        "ouput.name": "freeze",
+
+        "objc.useArc": true,
+
+        "log.printargs": true,
+
+        "defines": [
+            "DEBUG"
+        ],
+
+        "$source": {
+            "include": [
+                "./**/*.cpp"
+            ]
+        },
+
+        "$compile": {
+
+        }
+    }
+}
