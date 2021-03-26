@@ -2,13 +2,23 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "cbuild",
             "type": "shell",
-            "command": "cbuild",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "label": "clang++ build",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "main.cpp",
+                "-arch",
+                "x86_64",
+                "-std=c++17",
+                "-Wall",
+                "-g",
+                "-o",
+                "freeze",
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
         }
     ]
 }
